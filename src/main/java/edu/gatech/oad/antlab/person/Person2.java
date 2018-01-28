@@ -30,8 +30,15 @@ public class Person2 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-	  //Person 2 put your implementation here
-	  return null;
+	  char[] arr = input.toCharArray();
+	  for (int i = 0; i < 30; i++) {
+	  	int a = (int) (Math.random() * arr.length);
+	  	int b = (int) (Math.random() * arr.length);
+	  	char temp = arr[a];
+	  	arr[a] = arr[b];
+	  	arr[b] = temp;
+	  }
+	  return new String(arr);
 	}
 	/**
 	 * Return a string rep of this object

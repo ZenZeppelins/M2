@@ -46,7 +46,7 @@ public class Person3 {
 	  char[] retArray = new char[baseArray.length];
 
       for (int i = 0; i < baseArray.length; i++) {
-        retArray[i] = baseArray[baseArray.length - i];
+        retArray[i] = baseArray[baseArray.length - i - 1];
       }
 	  return new String(retArray);
 	}

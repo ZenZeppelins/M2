@@ -39,11 +39,11 @@ public class Person1 {
 		}
 		for (int i = 0; i < input.length(); i++) {
 			if (i >= 2) {
-				newWord.append(input.charAt(i));
+				newWord += input.charAt(i);
 			}
 		}
-		newWord.append(input.charAt(0));
-		newWord.append(input.charAt(1));
+		newWord += input.charAt(0);
+		newWord += input.charAt(1);
 		return newWord;
 	}
 	

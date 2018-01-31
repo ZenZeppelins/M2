@@ -30,8 +30,21 @@ public class Person1 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-	  //Person 1 put your implementation here
-	  return null;
+		String newWord = "";
+		if (input == null || input.length() < 0) {
+			throw new IndexOutOfBoundsException("Give me a String!");
+		}
+		if (input.length() <= 2) {
+			return input;
+		}
+		for (int i = 0; i < input.length(); i++) {
+			if (i >= 2) {
+				newWord.append(input.charAt(i));
+			}
+		}
+		newWord.append(input.charAt(0));
+		newWord.append(input.charAt(1));
+		return newWord;
 	}
 	
 	/**
